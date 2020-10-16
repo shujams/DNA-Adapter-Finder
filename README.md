@@ -1,4 +1,5 @@
 # Adapter Finder
+![image text](https://www.thoughtco.com/thmb/gOEbyq2I6Wwh3CB1KR1_5zCr-9k=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/3-D_DNA-56a09ae45f9b58eba4b20266.jpg)
 ## What is a sequence adapter?
 Sequence adapters are short DNA sequences serving the scope of fishing a (generally
 unknown) DNA sequence of interest for various purposes. Next Generation Sequencers (NGS) employ adapters
@@ -13,4 +14,4 @@ sequences.
 Here we will design a tool to determine if adapter sequences have been trimmed properly
 in an input FASTQ file. As a first step to solve this problem, we must calculate and
 output the frequency of all k-mers found in the input sequencing data, given an
-adapter of length k. Our tool will take two inputs: a FASTQ genomic data file and the adapter length (k) and will output a sorted list of all k-mers identified along with their frequency as observed in the input data:
+adapter of length k. This tool determines if adapter sequences have been trimmed properly in an input FASTQ file and will sort adapters based on k-mer length. Furthermore, it can find specific (including potential overlapping) user defined DNA adapter sequences and return their counts.
